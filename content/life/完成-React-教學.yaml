@@ -1,0 +1,20 @@
+id: "1"
+title: "完成 React 教學"
+date: "2024-01-14"
+category: "study"
+description: "花了一整天學習 React Hooks，終於搞懂了 useEffect 的用法。"
+content: |
+  # 完成 React 教學
+
+  花了一整天學習 React Hooks，終於搞懂了 useEffect 的用法。
+
+  ## 學習心得
+
+  今天深入學習了 React Hooks，特別是 `useEffect` 的使用方式。終於理解了依賴陣列的作用和如何正確使用它。
+
+  - 理解了 useEffect 的生命週期
+  - 學會了如何處理副作用
+  - 掌握了依賴陣列的使用
+
+  感覺自己又進步了！
+

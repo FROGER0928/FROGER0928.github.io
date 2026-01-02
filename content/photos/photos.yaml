@@ -1,0 +1,11 @@
+photos:
+  - id: "1"
+    url: "/attached_assets/generated_images/Hero_basketball_action_shot_a42d72bf.png"
+    caption: "籃球動作照片"
+  - id: "2"
+    url: "/attached_assets/generated_images/Student_profile_photo_c195a53a.png"
+    caption: "學生個人照片"
+  - id: "3"
+    url: "/attached_assets/generated_images/Website_design_mockup_b6926331.png"
+    caption: "網站設計模擬圖"
+

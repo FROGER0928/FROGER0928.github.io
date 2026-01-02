@@ -1,0 +1,22 @@
+id: "1"
+title: "個人作品集網站"
+description: "使用 React 和 Tailwind CSS 建立的個人作品集，展示了我的設計和開發能力。"
+tags: ["React", "Tailwind", "設計"]
+imageUrl: "/attached_assets/generated_images/Website_design_mockup_b6926331.png"
+content: |
+  # 個人作品集網站
+
+  這是我使用 **React** 和 **Tailwind CSS** 建立的個人作品集網站。
+
+  ## 專案特色
+
+  - 響應式設計
+  - 現代化的 UI/UX
+  - 優化的性能
+
+  ## 技術棧
+
+  - React
+  - Tailwind CSS
+  - TypeScript
+

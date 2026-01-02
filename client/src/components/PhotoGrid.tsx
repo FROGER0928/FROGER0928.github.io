@@ -1,11 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Camera } from "lucide-react";
-
-interface Photo {
-  id: string;
-  url?: string;
-  caption?: string;
-}
+import type { Photo } from "@/types/content";
 
 interface PhotoGridProps {
   photos: Photo[];

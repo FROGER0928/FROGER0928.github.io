@@ -2,36 +2,17 @@ import { Briefcase, BookHeart, Camera, Sparkles, Star, Heart } from "lucide-reac
 import StatCard from "@/components/StatCard";
 import DiaryCard from "@/components/DiaryCard";
 import PhotoGrid from "@/components/PhotoGrid";
-import { Card } from "@/components/ui/card";
+import { works, diaries, photos } from "@/data/content";
 
 export default function Home() {
   const stats = [
-    { icon: Briefcase, value: 12, label: "作品數量" },
-    { icon: BookHeart, value: 45, label: "日記篇數" },
-    { icon: Camera, value: 128, label: "照片數量" },
+    { icon: Briefcase, value: works.length, label: "作品數量" },
+    { icon: BookHeart, value: diaries.length, label: "日記篇數" },
+    { icon: Camera, value: photos.length, label: "照片數量" },
   ];
 
-  const recentDiaries = [
-    {
-      id: "1",
-      date: new Date("2024-01-15"),
-      title: "期末考結束了",
-      content: "終於考完試了！這學期學到很多東西，雖然壓力很大，但感覺自己成長了不少。",
-      mood: "happy" as const,
-    },
-    {
-      id: "2",
-      date: new Date("2024-01-10"),
-      title: "專案完成",
-      content: "和組員一起完成了期末專案，大家都很努力，最後的成果也讓人很滿意。",
-      mood: "good" as const,
-    },
-  ];
-
-  const recentPhotos = Array.from({ length: 4 }, (_, i) => ({
-    id: `photo-${i}`,
-    caption: `最新照片 ${i + 1}`,
-  }));
+  const recentDiaries = diaries.slice(0, 2);
+  const recentPhotos = photos.slice(0, 4);
 
   return (
     <div className="min-h-screen bg-background">
@@ -68,7 +49,7 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               {recentDiaries.map((diary) => (
-                <DiaryCard key={diary.id} {...diary} />
+                <DiaryCard key={diary.id} diary={diary} />
               ))}
             </div>
           </div>

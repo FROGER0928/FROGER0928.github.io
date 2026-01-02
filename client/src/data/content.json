@@ -1,0 +1,86 @@
+{
+  "works": [
+    {
+      "id": "2",
+      "title": "學校專題：智慧課表系統",
+      "description": "和同學合作開發的智慧課表系統，可以自動排課和推薦最佳時間表。",
+      "tags": [
+        "團隊專案",
+        "Python",
+        "演算法"
+      ],
+      "content": "# 學校專題：智慧課表系統\n\n和同學合作開發的智慧課表系統，可以自動排課和推薦最佳時間表。\n\n## 專案目標\n\n這個系統可以幫助學生自動安排課程，避免時間衝突，並推薦最佳的課表組合。\n\n## 技術實現\n\n- Python 後端\n- 演算法優化\n- 團隊協作開發\n",
+      "slug": "學校專題-智慧課表系統"
+    },
+    {
+      "id": "1",
+      "title": "個人作品集網站",
+      "description": "使用 React 和 Tailwind CSS 建立的個人作品集，展示了我的設計和開發能力。",
+      "tags": [
+        "React",
+        "Tailwind",
+        "設計"
+      ],
+      "imageUrl": "/attached_assets/generated_images/Website_design_mockup_b6926331.png",
+      "content": "# 個人作品集網站\n\n這是我使用 **React** 和 **Tailwind CSS** 建立的個人作品集網站。\n\n## 專案特色\n\n- 響應式設計\n- 現代化的 UI/UX\n- 優化的性能\n\n## 技術棧\n\n- React\n- Tailwind CSS\n- TypeScript\n",
+      "slug": "個人作品集網站"
+    }
+  ],
+  "diaries": [
+    {
+      "id": "1",
+      "title": "期末考結束了",
+      "date": "2024-01-15",
+      "mood": "happy",
+      "excerpt": "終於考完試了！這學期學到很多東西，雖然壓力很大，但感覺自己成長了不少。下學期要繼續加油！",
+      "content": "# 期末考結束了\n\n終於考完試了！這學期學到很多東西，雖然壓力很大，但感覺自己成長了不少。下學期要繼續加油！\n\n## 考試心得\n\n這次期末考讓我學到了很多，不只是知識上的成長，還有時間管理和壓力調適的能力。\n\n- 學會了更好的時間規劃\n- 提升了學習效率\n- 學會了如何調適壓力\n\n希望下學期能繼續保持這樣的學習態度！\n",
+      "slug": "期末考結束了"
+    },
+    {
+      "id": "2",
+      "title": "專案完成",
+      "date": "2024-01-10",
+      "mood": "good",
+      "excerpt": "和組員一起完成了期末專案，大家都很努力，最後的成果也讓人很滿意。這次合作學到了很多團隊協作的技巧。",
+      "content": "# 專案完成\n\n和組員一起完成了期末專案，大家都很努力，最後的成果也讓人很滿意。這次合作學到了很多團隊協作的技巧。\n\n## 團隊合作\n\n這次專案讓我深刻體會到團隊合作的重要性。每個人都有自己的專長，互相配合才能完成一個好的作品。\n\n## 學習收穫\n\n- 學會了 Git 協作\n- 提升了溝通能力\n- 學會了專案管理\n\n真的很感謝組員們的努力！\n",
+      "slug": "專案完成"
+    }
+  ],
+  "life": [
+    {
+      "id": "1",
+      "title": "完成 React 教學",
+      "date": "2024-01-14",
+      "category": "study",
+      "description": "花了一整天學習 React Hooks，終於搞懂了 useEffect 的用法。",
+      "content": "# 完成 React 教學\n\n花了一整天學習 React Hooks，終於搞懂了 useEffect 的用法。\n\n## 學習心得\n\n今天深入學習了 React Hooks，特別是 `useEffect` 的使用方式。終於理解了依賴陣列的作用和如何正確使用它。\n\n- 理解了 useEffect 的生命週期\n- 學會了如何處理副作用\n- 掌握了依賴陣列的使用\n\n感覺自己又進步了！\n",
+      "slug": "完成-React-教學"
+    },
+    {
+      "id": "2",
+      "title": "和朋友一起吃火鍋",
+      "date": "2024-01-13",
+      "category": "friends",
+      "description": "今天和室友們一起去吃火鍋，聊了很多有趣的話題，度過了愉快的一晚。",
+      "content": "# 和朋友一起吃火鍋\n\n今天和室友們一起去吃火鍋，聊了很多有趣的話題，度過了愉快的一晚。\n\n## 美好的時光\n\n和朋友在一起的時光總是特別珍貴。我們聊了很多有趣的話題，從學習到生活，從過去到未來。\n\n- 美味的火鍋\n- 愉快的聊天\n- 珍貴的友誼\n\n真的很感謝有這些好朋友！\n",
+      "slug": "和朋友一起吃火鍋"
+    }
+  ],
+  "photos": [
+    {
+      "id": "1",
+      "url": "/attached_assets/generated_images/Hero_basketball_action_shot_a42d72bf.png",
+      "caption": "籃球動作照片"
+    },
+    {
+      "id": "2",
+      "url": "/attached_assets/generated_images/Student_profile_photo_c195a53a.png",
+      "caption": "學生個人照片"
+    },
+    {
+      "id": "3",
+      "url": "/attached_assets/generated_images/Website_design_mockup_b6926331.png",
+      "caption": "網站設計模擬圖"
+    }
+  ]
+}

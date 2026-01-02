@@ -2,13 +2,11 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { format } from "date-fns";
 import { LucideIcon, Book, Users, UtensilsCrossed, Plane, Music } from "lucide-react";
+import { Link } from "wouter";
+import type { Life } from "@/types/content";
 
 interface LifeCardProps {
-  id: string;
-  date: Date;
-  title: string;
-  description: string;
-  category: "study" | "friends" | "food" | "travel" | "hobbies";
+  life: Life;
 }
 
 const categoryConfig: Record<string, { icon: LucideIcon; color: string; label: string }> = {
@@ -19,29 +17,32 @@ const categoryConfig: Record<string, { icon: LucideIcon; color: string; label: s
   hobbies: { icon: Music, color: "text-pink-500", label: "興趣" },
 };
 
-export default function LifeCard({ id, date, title, description, category }: LifeCardProps) {
-  const config = categoryConfig[category];
+export default function LifeCard({ life }: LifeCardProps) {
+  const config = categoryConfig[life.category];
   const Icon = config.icon;
+  const date = new Date(life.date);
 
   return (
-    <Card className="p-6 hover-elevate transition-all duration-200" data-testid={`card-life-${id}`}>
-      <div className="flex items-start gap-4">
-        <div className={`p-3 rounded-2xl bg-accent ${config.color}`}>
-          <Icon className="w-5 h-5" />
-        </div>
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-2 flex-wrap">
-            <Badge variant="secondary" className="rounded-full" data-testid={`badge-category-${category}`}>
-              {config.label}
-            </Badge>
-            <time className="text-sm text-muted-foreground">
-              {format(date, "yyyy/MM/dd")}
-            </time>
+    <Link href={`/life/${life.slug}`}>
+      <Card className="p-6 hover-elevate transition-all duration-200 cursor-pointer" data-testid={`card-life-${life.id}`}>
+        <div className="flex items-start gap-4">
+          <div className={`p-3 rounded-2xl bg-accent ${config.color}`}>
+            <Icon className="w-5 h-5" />
           </div>
-          <h3 className="font-heading font-semibold text-lg mb-2" data-testid={`text-life-title-${id}`}>{title}</h3>
-          <p className="text-sm text-muted-foreground">{description}</p>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
+              <Badge variant="secondary" className="rounded-full" data-testid={`badge-category-${life.category}`}>
+                {config.label}
+              </Badge>
+              <time className="text-sm text-muted-foreground">
+                {format(date, "yyyy/MM/dd")}
+              </time>
+            </div>
+            <h3 className="font-heading font-semibold text-lg mb-2" data-testid={`text-life-title-${life.id}`}>{life.title}</h3>
+            <p className="text-sm text-muted-foreground">{life.description}</p>
+          </div>
         </div>
-      </div>
-    </Card>
+      </Card>
+    </Link>
   );
 }
